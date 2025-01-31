@@ -3,24 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>assignment 3 </title>
-    <!--tailwind with  daisyui-->
+    <title>Document</title>
+    <!--tailwind css with daisyui components-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!--fontawesome-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
 <body>
-    <main class="w-[1140px] mx-auto">
-        <!--nav section-->
-        <header class="hidden">
-            <div class="navbar bg-base-100 hidden">
-                <div class="navbar">
-                  <div class="dropdown ">
-                    <div tabindex="0" role="button" class="btn  right-50 btn-ghost lg:hidden">
+   <main class="container md:w-[1160px] mx-auto">
+    <header>
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         class="h-5 w-5"
@@ -37,113 +34,171 @@
                     <ul
                       tabindex="0"
                       class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                      <li><a>Item 1</a></li>
+                      <li><a>Home</a></li>
                       <li>
-                        <a>Parent</a>
+                        <a>Cases</a>
                         <ul class="p-2">
                           <li><a>Submenu 1</a></li>
                           <li><a>Submenu 2</a></li>
                         </ul>
                       </li>
-                      <li><a>Item 3</a></li>
+                      <li><a>Blog</a></li>
+                      <li><a>Contact</a></li>
                     </ul>
                   </div>
-                 <div class="md:flex justify-center items-center ">
-                    <a class=" mx-5 text-xl"><img src="c1-assets/logo-header.png" alt=""></a>
-                    <a class=" hidden font-bold lg:block text-xl">Browse <span class=" text-[#FFDC26]">4</span> Pets</a>
-
-                 </div>
+                  <div>
+                    <div class="flex items-center">
+                        <img src="images/business.png" class="cursor-pointer" alt="">
+                        <a class="text-3xl capitalize font-bold cursor-pointer">justics</a>
+                    </div>
+                  </div>
                 </div>
                 <div class="navbar-center hidden lg:flex">
-                  <ul class="menu menu-horizontal px-1">
-                    <li><a class="font-bold" href="#">Find a pet</a></li>
-                    <li><a class="font-bold" href="#">Breeds</a></li>
-                    <li><a class="font-bold" href="#">Contact us</a></li>
+                  <ul class="menu menu-horizontal px-1 capitalize font-bold">
+                    <li><a>Home</a></li>
+                    <li>
+                      <details>
+                        <summary>Cases</summary>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </details>
+                    </li>
+                    <li><a>Services</a></li>
+                    <li><a>blog</a></li>
+                    <li><a>contact</a></li>
                   </ul>
                 </div>
-                <div class="navbar-end hidden lg:flex justify-center items-center">
-                  <a class="block cursor-pointer mx-5"><i class="fa-solid fa-bell"></i></a>
-                  <a class="block cursor-pointer mx-5"><i class="fa-solid fa-magnifying-glass"></i></a>
-                  <a class="btn bg-white border border-orange-400 px-6 mx-5">Login</a>
-                  <a class="btn bg-[#FFDC26] px-6  text-black">Register</a>
+                <div class="navbar-end">
+                  <a class="btn bg-[#B68C5A] text-white hover:none hover:bg-black">Free Consultations</a>
                 </div>
               </div>
-              <!--banner sections-->
-              <div>
-                
-                <div class="w-full">
-                  <h2 class=" font-bold text-3xl leading-10">Pamper Your Pet,<br> Because They Deserve <br> the Bes</h2>
-                  <p class="my-4 text-gray-500">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
-                  <button type="button" class="btn  bg-[#FFDC26] capitalize ">Find a pet</button>
-                  <!-- <img class="max-w-sm md:max-w-full" src="c1-assets/cat-big.png" alt=""> -->
-              </div>
-              
-              </div>
-        </header>
-        <section class="py-52">
-         <!-- <div> <h2 class="adlam-font text-3xl mb-28"> Browse By Categories</h2></div> -->
-         <div class="my-cats grid grid-cols-2 md:grid-cols-6">
-          <div class="cats-items bg-red-700  w-1/2 md:w-full">
-            <div class="cats-imgs">
-              <img src="c1-assets/cat-cartoon.png" alt="">
-            </div>
-            <div cats="cats-text">
-              <h2>cats</h2>
-              <p>3</p>
-            </div>
-          </div>
-          <div class="cats-items bg-red-700  w-1/2">
-            <div class="cats-imgs">
-              <img src="c1-assets/cat-cartoon.png" alt="">
-            </div>
-            <div cats="cats-text">
-              <h2>cats</h2>
-              <p>3</p>
-            </div>
-          </div>
-          <div class="cats-items bg-red-700  w-1/2">
-            <div class="cats-imgs">
-              <img src="c1-assets/cat-cartoon.png" alt="">
-            </div>
-            <div cats="cats-text">
-              <h2>cats</h2>
-              <p>3</p>
-            </div>
-          </div>
+        </nav>
+    </header>
 
-          <div class="cats-items bg-red-700  w-1/2">
-            <div class="cats-imgs">
-              <img src="c1-assets/cat-cartoon.png" alt="">
+    <!-- sections-->
+     <section > 
+        <div class="hero h-[570px]"
+            style="background-image: url(images/banner.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-neutral-content text-center">
+                <div class="">
+                <h1 class=" text-5xl font-bold">We Provide Effective <br> Legal Solutions</h1>
+                <p class="my-5">
+                    There are many variations of passages of Lorem Ipsum available, but the majority <br> have suffered alteration in some form, by injected humour.
+                </p>
+                <div>
+                    <input type="email" placeholder="Enter Your Emain Address" class="input input-bordered input-secondary w-full max-w-xs" />
+                    <a class="btn bg-[#B68C5A] text-white hover:none hover:bg-black">Search</a>
+                </div>
+                </div>
             </div>
-            <div cats="cats-text">
-              <h2>cats</h2>
-              <p>3</p>
+        </div>
+     </section>
+     <!--legal practices area-->
+     <section class="my-28"> 
+        <div class="text-center">
+            <h2 class="font-bold text-3xl mb-2">The Legal Practice Area</h2>
+            <p class="font-xl">There are many variations of passages of Lorem Ipsum available, but the majority have <br> suffered alteration in some form, by injected humour.</p>
+        </div>
+        <!--practices session-->
+        <div class="my-28">
+            <div class="grid md:grid-cols-3  w-full text-center items-center">
+                <div class="text-center h-[400px] w-full mx-auto md:border-b md:border-indigo-500  flex flex-col justify-center px-5">
+                    <img class="mx-auto" src="images/business.png" alt="">
+                    <h2>Business Law</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="text-center h-[400px]  w-full md:border border-indigo-500 flex flex-col justify-center px-5">
+                    <img class="mx-auto" src="images/business.png" alt="">
+                    <h2>Business Law</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="text-center h-[400px] w-full border-b border-indigo-500 flex flex-col justify-center px-5" >
+                    <img class="mx-auto" src="images/business.png" alt="">
+                    <h2>Business Law</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="text-center h-[400px] w-full  flex flex-col justify-center px-5" >
+                    <img class="mx-auto" src="images/business.png" alt="">
+                    <h2>Business Law</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="text-center h-[400px] w-full flex flex-col justify-center px-5" >
+                    <img class="mx-auto" src="images/business.png" alt="">
+                    <h2>Business Law</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+                <div class="text-center h-[400px] w-full  flex flex-col justify-center px-5" >
+                    <img class="mx-auto" src="images/business.png" alt="">
+                    <h2>Business Law</h2>
+                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+                    <a href="#"> <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
+            
+        </div>
+     </section>
+
+     <section>
+      <div>
+        <div>
+          <div>
+            <img src="c1-assets/cat-cartoon.png" alt="">
           </div>
-          <div class="cats-items bg-red-700  w-1/2">
-            <div class="cats-imgs">
-              <img src="c1-assets/cat-cartoon.png" alt="">
-            </div>
-            <div cats="cats-text">
-              <h2>cats</h2>
-              <p>3</p>
-            </div>
+          <div>
+            <h2>Cats</h2>
+            <p>3</p>
           </div>
-          <div class="cats-items bg-red-700 w-1/2">
-            <div class="cats-imgs">
-              <img src="c1-assets/cat-cartoon.png" alt="">
-            </div>
-            <div cats="cats-text">
-              <h2>cats</h2>
-              <p>3</p>
-            </div>
-          </div>
-         </div>
-    
-          </div>
-        </section>
-    </main>
+        </div>
+      </div>
+     </section>
+   </main>
 
 
+
+    <footer class="footer  bg-black text-white p-10 ">
+        <nav class="md:mx-auto">
+          <h6 class="footer-title">Services</h6>
+          <a class="link link-hover">Branding</a>
+          <a class="link link-hover">Design</a>
+          <a class="link link-hover">Marketing</a>
+          <a class="link link-hover">Advertisement</a>
+        </nav>
+        <nav class="md:mx-auto">
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover">About us</a>
+          <a class="link link-hover">Contact</a>
+          <a class="link link-hover">Jobs</a>
+          <a class="link link-hover">Press kit</a>
+        </nav>
+        <nav class="md:mx-auto" >
+          <h6 class="footer-title">Legal</h6>
+          <a class="link link-hover">Terms of use</a>
+          <a class="link link-hover">Privacy policy</a>
+          <a class="link link-hover">Cookie policy</a>
+        </nav>
+        <form class="md:mx-auto">
+          <h6 class="footer-title">Newsletter</h6>
+          <fieldset class="form-control w-80">
+            <label class="label">
+              <span class="label-text">Enter your email address</span>
+            </label>
+            <div class="join">
+              <input
+                type="text"
+                placeholder="username@site.com"
+                class="input input-bordered join-item" />
+              <button class="btn btn-primary rounded-l-md join-item">Subscribe</button>
+            </div>
+          </fieldset>
+        </form>
+    </footer>
 </body>
 </html>
